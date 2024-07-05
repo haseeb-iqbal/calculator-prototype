@@ -1,0 +1,101 @@
+html {
+  text-align: center;
+  font-family: monospace;
+}
+
+body {
+  background-color: rgb(178, 237, 237);
+}
+
+#center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 95vh;
+  height: 100vh;
+}
+#calculator-container {
+  background-color: rgb(77, 77, 77);
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(10px, auto) repeat(5, 80px);
+  gap: 2px;
+  padding: 10px;
+}
+
+#display {
+  grid-column: 1/-1;
+  background-color: #b2b9b7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 5px;
+  font-size: 5.5em;
+  font-weight: initial;
+  text-shadow: 1.3px 1.3px #383838;
+  margin: 5px;
+}
+
+button {
+  font-size: 3em;
+  border-radius: 5px;
+}
+
+.operand {
+  background-color: rgb(141, 192, 162);
+}
+.operand:active {
+  background-color: rgb(57, 151, 93);
+}
+
+.operator {
+  background-color: rgb(115, 125, 175);
+}
+
+.operator:active {
+  background-color: rgb(52, 73, 177);
+}
+
+#zero {
+  grid-column: 1/-3;
+}
+.equals {
+  background-color: rgb(115, 125, 175);
+}
+
+.equals:active {
+  background-color: rgb(52, 73, 177);
+}
+
+.decimal {
+  background-color: rgb(141, 192, 162);
+}
+
+.decimal:active {
+  background-color: rgb(57, 151, 93);
+}
+
+.clear {
+  background-color: rgb(219, 148, 86);
+}
+
+.clear:active {
+  background-color: rgb(234, 120, 20);
+}
+
+.sign {
+  background-color: rgb(219, 148, 86);
+}
+
+.sign:active {
+  background-color: rgb(234, 120, 20);
+}
+
+.percentage {
+  background-color: rgb(219, 148, 86);
+}
+
+.percentage:active {
+  background-color: rgb(234, 120, 20);
+}
